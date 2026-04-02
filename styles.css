@@ -551,6 +551,79 @@ html {
     border-top: 1px solid #e2e8f0;
 }
 
+/* Identitetsintrång – egen blå ruta under FAQ */
+.identitetsintrang-section {
+    background-color: #f1f5f9;
+    padding: 48px 0 60px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.identitetsintrang-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+    border-radius: 12px;
+    border: 1px solid #1d4ed8;
+    box-shadow: 0 4px 20px rgba(30, 64, 175, 0.35);
+    overflow: hidden;
+}
+
+.identitetsintrang-card-inner {
+    padding: 28px 32px 32px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.identitetsintrang-icon {
+    font-size: 2.75rem;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.identitetsintrang-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 16px;
+    line-height: 1.3;
+}
+
+.identitetsintrang-text {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: #e0e7ff;
+    margin: 0 0 20px;
+    text-align: left;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.identitetsintrang-actions {
+    margin: 0;
+}
+
+.identitetsintrang-link {
+    display: inline-block;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: rgba(255, 255, 255, 0.7);
+}
+
+.identitetsintrang-link:hover {
+    color: #bfdbfe;
+    text-decoration-color: #bfdbfe;
+}
+
+.identitetsintrang-link:focus {
+    outline: 2px solid #bfdbfe;
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
 /* Kalender påminnelse sektion */
 .calendar-reminder-section {
     background-color: #ffffff;
@@ -677,51 +750,6 @@ html {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* FAQ: utmärkt ruta – identitetsintrång (blå) */
-.faq-item-highlight {
-    background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
-    border-color: #1d4ed8;
-    box-shadow: 0 4px 16px rgba(30, 64, 175, 0.35);
-}
-
-.faq-item-highlight .faq-icon {
-    color: #bfdbfe;
-}
-
-.faq-item-highlight .faq-question[aria-expanded="true"] .faq-icon {
-    color: #e0e7ff;
-}
-
-.faq-question-icon {
-    margin-right: 10px;
-    font-size: 1.35rem;
-    vertical-align: -0.1em;
-}
-
-.faq-answer-highlight {
-    background-color: #ffffff;
-    color: #2d3748;
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
-}
-
-.faq-highlight-link {
-    display: inline-block;
-    margin-top: 4px;
-    font-weight: 600;
-    color: #1e40af;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-.faq-highlight-link:hover {
-    color: #1d4ed8;
-}
-
-.faq-highlight-link:focus {
-    outline: 2px solid #2563eb;
-    outline-offset: 2px;
-}
-
 .faq-question {
     width: 100%;
     background: none;
@@ -737,10 +765,6 @@ html {
     font-weight: 500;
     color: #2d3748;
     transition: all 0.2s ease;
-}
-
-.faq-question.faq-question-highlight {
-    color: #ffffff;
 }
 
 .step-by-step-question {
@@ -764,20 +788,10 @@ html {
     color: #4a5568;
 }
 
-.faq-item-highlight .faq-question:hover {
-    background-color: rgba(255, 255, 255, 0.12);
-    color: #ffffff;
-}
-
 .faq-question:focus,
 .step-by-step-question:focus {
     outline: 2px solid #3182ce;
     outline-offset: -2px;
-}
-
-.faq-item-highlight .faq-question:focus {
-    outline: 2px solid #bfdbfe;
-    outline-offset: 2px;
 }
 
 .faq-question-text {
@@ -1582,8 +1596,21 @@ html {
 
 @media (max-width: 480px) {
     .faq-section,
-    .step-by-step-section {
+    .step-by-step-section,
+    .identitetsintrang-section {
         padding: 40px 0;
+    }
+    
+    .identitetsintrang-card-inner {
+        padding: 22px 20px 26px;
+    }
+    
+    .identitetsintrang-title {
+        font-size: 1.2rem;
+    }
+    
+    .identitetsintrang-text {
+        font-size: 0.95rem;
     }
     
     .faq-section h2 {

@@ -24,7 +24,7 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://delit.github.io/tabort/">
     <meta property="twitter:title" content="Ta bort mig - Ta bort dina personuppgifter från internet">
-    <meta property="twitter:description" content="Ta bort personuppgifter enligt GDPR. FAQ om identitetsintrång och id-kapning med vägledning från Skatteverket.">
+    <meta property="twitter:description" content="Ta bort personuppgifter enligt GDPR. Efter FAQ: identitetsintrång och id-kapning med vägledning från Skatteverket.">
     <meta property="twitter:image" content="https://delit.github.io/tabort/favicon/android-chrome-512x512.png">
     
     <!-- Canonical URL -->
@@ -451,19 +451,6 @@
         <div class="container">
             <h2 id="faq-heading">Vanliga frågor om att ta bort personuppgifter från internet</h2>
             <div class="faq-list">
-                <div class="faq-item faq-item-highlight" id="faq-identitetsintrang">
-                    <button class="faq-question faq-question-highlight" aria-expanded="false" aria-controls="faq-answer-identitetsintrang" id="faq-question-identitetsintrang">
-                        <span class="faq-question-text">
-                            <span class="faq-question-icon" aria-hidden="true">🔐</span>
-                            Identitetsintrång
-                        </span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer faq-answer-highlight" id="faq-answer-identitetsintrang" aria-hidden="true" role="region" aria-labelledby="faq-question-identitetsintrang">
-                        <p>Identitetsintrång är när någon obehörig använder din legitimation, dina lösenord, ditt personnummer eller ditt mobila bank-id för att till exempel beställa varor eller ta lån i ditt namn. Det kallas också för identitetsstöld, id-kapning eller identitetskapning och är en form av bedrägeri.</p>
-                        <p><a href="https://www.skatteverket.se/privat/folkbokforing/identitetsintrang.4.35c34f651660af3747c3178.html" target="_blank" rel="noopener noreferrer" class="faq-highlight-link">Läs mer om identitetsintrång och hur du skyddar dig – Skatteverket<span class="sr-only"> (öppnas i nytt fönster)</span></a></p>
-                    </div>
-                </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
                         <span class="faq-question-text">Vilka uppgifter finns om mig på dessa sidor?</span>
@@ -635,6 +622,22 @@
         </div>
     </section>
 
+    <!-- Identitetsintrång – egen ruta under FAQ (inte del av FAQ-accordion) -->
+    <section id="identitetsintrang-section" class="identitetsintrang-section" aria-labelledby="identitetsintrang-heading">
+        <div class="container">
+            <article class="identitetsintrang-card">
+                <div class="identitetsintrang-card-inner">
+                    <div class="identitetsintrang-icon" aria-hidden="true">🔐</div>
+                    <h2 id="identitetsintrang-heading" class="identitetsintrang-title">Identitetsintrång</h2>
+                    <p class="identitetsintrang-text">Identitetsintrång är när någon obehörig använder din legitimation, dina lösenord, ditt personnummer eller ditt mobila bank-id för att till exempel beställa varor eller ta lån i ditt namn. Det kallas också för identitetsstöld, id-kapning eller identitetskapning och är en form av bedrägeri.</p>
+                    <p class="identitetsintrang-actions">
+                        <a href="https://www.skatteverket.se/privat/folkbokforing/identitetsintrang.4.35c34f651660af3747c3178.html" target="_blank" rel="noopener noreferrer" class="identitetsintrang-link">Läs mer om identitetsintrång och hur du skyddar dig – Skatteverket<span class="sr-only"> (öppnas i nytt fönster)</span></a>
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
     <!-- Länkar och Om sidan sektion -->
     <section id="links-about-section" class="links-about-section" aria-labelledby="links-about-heading">
         <div class="container">
@@ -744,15 +747,6 @@
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Vad är identitetsintrång och hur skyddar jag mig?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Identitetsintrång är när någon obehörig använder din legitimation, dina lösenord, ditt personnummer eller ditt mobila bank-id för att till exempel beställa varor eller ta lån i ditt namn. Det kallas också för identitetsstöld, id-kapning eller identitetskapning och är en form av bedrägeri. Skatteverket beskriver vad du kan göra för att skydda dig, till exempel bevaka adress, spärra obehörig adressändring och adresslås.",
-                    "url": "https://www.skatteverket.se/privat/folkbokforing/identitetsintrang.4.35c34f651660af3747c3178.html"
-                }
-            },
             {
                 "@type": "Question",
                 "name": "Vilka uppgifter finns om mig på dessa sidor?",
@@ -909,13 +903,36 @@
     }
     </script>
 
+    <!-- Identitetsintrång (egen sektion under FAQ, inte FAQPage) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Identitetsintrång",
+        "description": "Identitetsintrång, identitetsstöld och id-kapning – när någon obehörig använder din legitimation eller personnummer. Officiell vägledning hos Skatteverket.",
+        "articleBody": "Identitetsintrång är när någon obehörig använder din legitimation, dina lösenord, ditt personnummer eller ditt mobila bank-id för att till exempel beställa varor eller ta lån i ditt namn. Det kallas också för identitetsstöld, id-kapning eller identitetskapning och är en form av bedrägeri.",
+        "inLanguage": "sv-SE",
+        "url": "https://delit.github.io/tabort/#identitetsintrang-section",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://delit.github.io/tabort/#identitetsintrang-section"
+        },
+        "isBasedOn": "https://www.skatteverket.se/privat/folkbokforing/identitetsintrang.4.35c34f651660af3747c3178.html",
+        "author": {
+            "@type": "GovernmentOrganization",
+            "name": "Skatteverket",
+            "url": "https://www.skatteverket.se"
+        }
+    }
+    </script>
+
     <!-- WebPage Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Ta bort personuppgifter från svenska webbplatser",
-        "description": "Komplett guide för att ta bort dina personuppgifter från Ratsit, Hitta.se, Eniro, Mrkoll och andra svenska söktjänster enligt GDPR. FAQ om identitetsintrång, id-kapning och skydd enligt Skatteverket. Inkluderar steg-för-steg, sökfunktion och kalenderpåminnelse.",
+        "description": "Komplett guide för att ta bort dina personuppgifter från Ratsit, Hitta.se, Eniro, Mrkoll och andra svenska söktjänster enligt GDPR. Efter FAQ: information om identitetsintrång och id-kapning med länk till Skatteverket. Inkluderar steg-för-steg, sökfunktion och kalenderpåminnelse.",
         "url": "https://delit.github.io/tabort/",
         "inLanguage": "sv-SE",
         "isPartOf": {

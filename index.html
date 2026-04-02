@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="description" content="Ta bort dina personuppgifter från internet. Vi hjälper dig att ta bort dig från Ratsit, Hitta.se, Eniro, Mrkoll och andra svenska webbplatser enligt GDPR. Inkluderar sökfunktion, steg-för-steg instruktioner, kalenderpåminnelser, FAQ och användbara länkar.">
-    <meta name="keywords" content="ta bort personuppgifter, integritet, GDPR, ratsit, hitta.se, eniro, mrkoll, sverige, svenska webbplatser, dataskydd">
+    <meta name="description" content="Ta bort dina personuppgifter från internet. Vi hjälper dig att ta bort dig från Ratsit, Hitta.se, Eniro, Mrkoll och andra svenska webbplatser enligt GDPR. Information om identitetsintrång, id-kapning och skydd enligt Skatteverket. Inkluderar sökfunktion, steg-för-steg, kalenderpåminnelser och FAQ.">
+    <meta name="keywords" content="ta bort personuppgifter, integritet, GDPR, identitetsintrång, identitetsstöld, id-kapning, identitetskapning, Skatteverket, ratsit, hitta.se, eniro, mrkoll, sverige, svenska webbplatser, dataskydd">
     <meta name="author" content="Ta bort mig">
     <meta name="robots" content="index, follow">
     <meta name="geo.region" content="SE">
@@ -16,7 +16,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://delit.github.io/tabort/">
     <meta property="og:title" content="Ta bort mig - Ta bort dina personuppgifter från internet">
-    <meta property="og:description" content="Vi hjälper dig att ta bort dina personuppgifter från olika svenska webbplatser som Ratsit, Hitta.se, Eniro och flera andra enligt GDPR.">
+    <meta property="og:description" content="Ta bort personuppgifter från Ratsit, Hitta.se, Eniro m.fl. enligt GDPR. Läs om identitetsintrång, id-kapning och hur du skyddar dig – med länk till Skatteverket.">
     <meta property="og:image" content="https://delit.github.io/tabort/favicon/android-chrome-512x512.png">
     <meta property="og:locale" content="sv_SE">
     
@@ -24,7 +24,7 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://delit.github.io/tabort/">
     <meta property="twitter:title" content="Ta bort mig - Ta bort dina personuppgifter från internet">
-    <meta property="twitter:description" content="Vi hjälper dig att ta bort dina personuppgifter från olika svenska webbplatser enligt GDPR.">
+    <meta property="twitter:description" content="Ta bort personuppgifter enligt GDPR. FAQ om identitetsintrång och id-kapning med vägledning från Skatteverket.">
     <meta property="twitter:image" content="https://delit.github.io/tabort/favicon/android-chrome-512x512.png">
     
     <!-- Canonical URL -->
@@ -428,7 +428,7 @@
         <div class="container">
             <div class="column-icon" aria-hidden="true">📅</div>
             <h2 id="calendar-reminder-heading">Skapa en påminnelse i din kalender om ett år</h2>
-            <p class="calendar-reminder-description">Sätt en påminnelse om ett år för att kontrollera om dina uppgifter har lagts tillbaka på webbplatserna.</p>
+            <p class="calendar-reminder-description">Vissa företag, särskilt kreditupplysningsföretag och folkbokföringsdatabaser, kan ha rätt att återpublicera dina uppgifter efter 12 månader enligt svensk lag. Sätt en påminnelse om ett år för att kontrollera om dina uppgifter har lagts tillbaka.</p>
             <div class="calendar-buttons">
                 <button class="calendar-button" onclick="createCalendarEvent('google')" aria-label="Skapa Google Calendar påminnelse" tabindex="0">
                     <img src="https://www.google.com/s2/favicons?sz=32&domain=calendar.google.com" alt="Google Calendar" class="calendar-icon">
@@ -451,6 +451,19 @@
         <div class="container">
             <h2 id="faq-heading">Vanliga frågor om att ta bort personuppgifter från internet</h2>
             <div class="faq-list">
+                <div class="faq-item faq-item-highlight" id="faq-identitetsintrang">
+                    <button class="faq-question faq-question-highlight" aria-expanded="false" aria-controls="faq-answer-identitetsintrang" id="faq-question-identitetsintrang">
+                        <span class="faq-question-text">
+                            <span class="faq-question-icon" aria-hidden="true">🔐</span>
+                            Identitetsintrång
+                        </span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer faq-answer-highlight" id="faq-answer-identitetsintrang" aria-hidden="true" role="region" aria-labelledby="faq-question-identitetsintrang">
+                        <p>Identitetsintrång är när någon obehörig använder din legitimation, dina lösenord, ditt personnummer eller ditt mobila bank-id för att till exempel beställa varor eller ta lån i ditt namn. Det kallas också för identitetsstöld, id-kapning eller identitetskapning och är en form av bedrägeri.</p>
+                        <p><a href="https://www.skatteverket.se/privat/folkbokforing/identitetsintrang.4.35c34f651660af3747c3178.html" target="_blank" rel="noopener noreferrer" class="faq-highlight-link">Läs mer om identitetsintrång och hur du skyddar dig – Skatteverket<span class="sr-only"> (öppnas i nytt fönster)</span></a></p>
+                    </div>
+                </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
                         <span class="faq-question-text">Vilka uppgifter finns om mig på dessa sidor?</span>
@@ -633,6 +646,7 @@
                         <li><a href="https://www.imy.se/privatperson/dataskydd/dina-rattigheter/radering/" target="_blank" rel="noopener noreferrer" tabindex="0">Rätt till radering - IMY</a></li>
                         <li><a href="https://www.polisforbundet.se/rad-och-stod/hot-och-vald-mot-poliser/minska-din-synlighet-pa-internet/" target="_blank" rel="noopener noreferrer" tabindex="0">Minska din synlighet på internet - Polisförbundet</a></li>
                         <li><a href="https://www.dfri.se/how-do-i-remove-my-personal-data-from-open-online-websites-in-sweden-here-are-the-answers/" target="_blank" rel="noopener noreferrer" tabindex="0">How to remove personal data from Swedish websites - DFRI</a></li>
+                        <li><a href="https://www.skatteverket.se/privat/folkbokforing/identitetsintrang.4.35c34f651660af3747c3178.html" target="_blank" rel="noopener noreferrer" tabindex="0">Identitetsintrång – så skyddar du dig (Skatteverket)</a></li>
                         <li><a href="https://polisen.se/utsatt-for-brott/polisanmalan/bedrageri/bedragerier/identitetbedrageri/" target="_blank" rel="noopener noreferrer" tabindex="0">Skydda dig mot identitetsstöld och id-kapning - Polisen</a></li>
                         <li><a href="https://propensionaren.se/sa-skyddar-du-din-identitet/" target="_blank" rel="noopener noreferrer" tabindex="0">Så skyddar du din identitet - PROpensionären</a></li>
                     </ul>
@@ -701,7 +715,7 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Ta bort mig",
-        "description": "Ta bort dina personuppgifter från internet. Vi hjälper dig att ta bort dig från Ratsit, Hitta.se, Eniro, Mrkoll och andra svenska webbplatser enligt GDPR.",
+        "description": "Ta bort dina personuppgifter från internet. Vi hjälper dig att ta bort dig från Ratsit, Hitta.se, Eniro, Mrkoll och andra svenska webbplatser enligt GDPR. Information om identitetsintrång och id-kapning med vägledning från Skatteverket.",
         "url": "https://delit.github.io/tabort/",
         "inLanguage": "sv-SE",
         "audience": {
@@ -730,6 +744,15 @@
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Vad är identitetsintrång och hur skyddar jag mig?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Identitetsintrång är när någon obehörig använder din legitimation, dina lösenord, ditt personnummer eller ditt mobila bank-id för att till exempel beställa varor eller ta lån i ditt namn. Det kallas också för identitetsstöld, id-kapning eller identitetskapning och är en form av bedrägeri. Skatteverket beskriver vad du kan göra för att skydda dig, till exempel bevaka adress, spärra obehörig adressändring och adresslås.",
+                    "url": "https://www.skatteverket.se/privat/folkbokforing/identitetsintrang.4.35c34f651660af3747c3178.html"
+                }
+            },
             {
                 "@type": "Question",
                 "name": "Vilka uppgifter finns om mig på dessa sidor?",
@@ -892,7 +915,7 @@
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Ta bort personuppgifter från svenska webbplatser",
-        "description": "Komplett guide för att ta bort dina personuppgifter från Ratsit, Hitta.se, Eniro, Mrkoll och andra svenska söktjänster enligt GDPR. Inkluderar steg-för-steg instruktioner, sökfunktion och FAQ.",
+        "description": "Komplett guide för att ta bort dina personuppgifter från Ratsit, Hitta.se, Eniro, Mrkoll och andra svenska söktjänster enligt GDPR. FAQ om identitetsintrång, id-kapning och skydd enligt Skatteverket. Inkluderar steg-för-steg, sökfunktion och kalenderpåminnelse.",
         "url": "https://delit.github.io/tabort/",
         "inLanguage": "sv-SE",
         "isPartOf": {
@@ -916,6 +939,11 @@
                 "@type": "Country",
                 "name": "Sweden"
             }
+        },
+        "mentions": {
+            "@type": "WebPage",
+            "name": "Identitetsintrång – Skatteverket",
+            "url": "https://www.skatteverket.se/privat/folkbokforing/identitetsintrang.4.35c34f651660af3747c3178.html"
         }
     }
     </script>

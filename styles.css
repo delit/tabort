@@ -677,6 +677,51 @@ html {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+/* FAQ: utmärkt ruta – identitetsintrång (blå) */
+.faq-item-highlight {
+    background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+    border-color: #1d4ed8;
+    box-shadow: 0 4px 16px rgba(30, 64, 175, 0.35);
+}
+
+.faq-item-highlight .faq-icon {
+    color: #bfdbfe;
+}
+
+.faq-item-highlight .faq-question[aria-expanded="true"] .faq-icon {
+    color: #e0e7ff;
+}
+
+.faq-question-icon {
+    margin-right: 10px;
+    font-size: 1.35rem;
+    vertical-align: -0.1em;
+}
+
+.faq-answer-highlight {
+    background-color: #ffffff;
+    color: #2d3748;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.faq-highlight-link {
+    display: inline-block;
+    margin-top: 4px;
+    font-weight: 600;
+    color: #1e40af;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.faq-highlight-link:hover {
+    color: #1d4ed8;
+}
+
+.faq-highlight-link:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
 .faq-question {
     width: 100%;
     background: none;
@@ -692,6 +737,10 @@ html {
     font-weight: 500;
     color: #2d3748;
     transition: all 0.2s ease;
+}
+
+.faq-question.faq-question-highlight {
+    color: #ffffff;
 }
 
 .step-by-step-question {
@@ -715,10 +764,20 @@ html {
     color: #4a5568;
 }
 
+.faq-item-highlight .faq-question:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
 .faq-question:focus,
 .step-by-step-question:focus {
     outline: 2px solid #3182ce;
     outline-offset: -2px;
+}
+
+.faq-item-highlight .faq-question:focus {
+    outline: 2px solid #bfdbfe;
+    outline-offset: 2px;
 }
 
 .faq-question-text {

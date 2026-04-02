@@ -18,7 +18,7 @@ En minimalistisk och modern webbsida som hjälper användare att ta bort sina pe
 
 - **Hitta.se** - https://www.hitta.se/om-hitta/ta-bort-uppgifter
 - **Eniro** - https://www.eniro.se/kundservice/kontakta-oss
-- **Ratsit** - https://www.ratsit.se/information/vanliga-fragor#ta_bort_uppgifter
+- **Ratsit** - https://www.ratsit.se/tabort
 - **Merinfo** - https://www.merinfo.se/integritetspolicy
 - **Mrkoll** - https://www.mrkoll.se/om-oss/faq
 - **Birthday.se** - https://www.birthday.se/ta-bort

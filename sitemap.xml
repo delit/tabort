@@ -20,9 +20,9 @@
         <priority>0.8</priority>
     </url>
     
-    <!-- FAQ sektion -->
+    <!-- Steg-för-steg guide sektion -->
     <url>
-        <loc>https://delit.github.io/tabort/#faq-section</loc>
+        <loc>https://delit.github.io/tabort/#step-by-step-section</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -36,9 +36,9 @@
         <priority>0.7</priority>
     </url>
     
-    <!-- Steg-för-steg guide sektion -->
+    <!-- FAQ sektion -->
     <url>
-        <loc>https://delit.github.io/tabort/#step-by-step-section</loc>
+        <loc>https://delit.github.io/tabort/#faq-section</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>

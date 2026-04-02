@@ -1065,6 +1065,22 @@ html {
     line-height: 1.4;
 }
 
+.footer-delit-link {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.footer-delit-link:hover {
+    color: #4a5568;
+}
+
+.footer-delit-link:focus {
+    outline: 2px solid #3182ce;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
 .links-about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;

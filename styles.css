@@ -1,0 +1,1784 @@
+/* Reset och grundläggande styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Accessibility klasser */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+/* Skip links styling */
+.skip-links {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    z-index: 1000;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 6px;
+    background: #3182ce;
+    color: #fff;
+}
+
+/* Focus styles för bättre accessibility */
+*:focus {
+    outline: 3px solid #3182ce;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+button:focus,
+a:focus,
+input:focus {
+    outline: 3px solid #3182ce;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Förbättrade focus indicators för olika element */
+.company-card:focus {
+    outline: 3px solid #3182ce;
+    outline-offset: 3px;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(49, 130, 206, 0.3);
+}
+
+.generate-btn:focus {
+    outline: 3px solid #3182ce;
+    outline-offset: 2px;
+    background-color: #2c5aa0;
+}
+
+input:focus {
+    outline: 3px solid #3182ce;
+    outline-offset: 2px;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+/* Focus visible för bättre keyboard navigation */
+.company-card:focus-visible {
+    outline: 3px solid #3182ce;
+    outline-offset: 3px;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #3182ce;
+    outline-offset: 2px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #2d3748;
+    background-color: #f7fafc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container för responsiv layout */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+
+/* Companies section styling */
+.companies-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.companies-section h2 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    font-family: 'Poppins', sans-serif;
+}
+
+.companies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.company-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 24px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    min-height: 140px;
+}
+
+.company-card:hover {
+    border-color: #4a5568;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: inherit;
+}
+
+.company-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.company-favicon {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.company-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6b7280;
+    text-align: center;
+}
+
+.company-card:hover .company-name {
+    color: #2d3748;
+}
+
+.company-card:hover .company-text {
+    color: #4a5568;
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    padding: 60px 0;
+}
+
+.hero-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-favicon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    color: #6b7280;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.hero-description a {
+    color: #1e40af;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.hero-description a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #edf2f7;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+    margin-top: auto;
+}
+
+footer p {
+    color: #4a5568;
+    font-size: 0.9rem;
+}
+
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    .hero-favicon {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 18px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+    }
+    
+    .companies-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 12px;
+    }
+    
+    .company-card {
+        padding: 20px;
+        min-height: 120px;
+    }
+    
+    .company-name {
+        font-size: 1.2rem;
+    }
+    
+    .company-favicon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .company-text {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-favicon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 12px;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .companies-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .company-card {
+        padding: 18px;
+        min-height: 130px;
+    }
+    
+    .company-name {
+        font-size: 1.3rem;
+    }
+    
+    .company-favicon {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .company-text {
+        font-size: 0.9rem;
+    }
+    
+    
+    .search-header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .search-header h2 {
+        font-size: 1.1rem;
+    }
+    
+    .search-container {
+        padding: 0 15px;
+    }
+    
+    .search-content {
+        padding: 16px;
+    }
+    
+    .form-group input {
+        padding: 10px 14px;
+        font-size: 0.95rem;
+    }
+    
+    .generate-btn {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+        width: 100%;
+    }
+    
+    .generated-links {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .generated-link {
+        padding: 12px;
+    }
+    
+    .generated-link-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra mobil optimering för mycket små skärmar */
+@media (max-width: 360px) {
+    .search-container {
+        padding: 0 10px;
+    }
+    
+    .search-content {
+        padding: 12px;
+    }
+    
+    .search-header h2 {
+        font-size: 1.1rem;
+    }
+    
+    .form-group input {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .generate-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    
+    .generated-link {
+        padding: 10px;
+        gap: 8px;
+    }
+    
+    .generated-link-icon {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .generated-link-text {
+        font-size: 0.85rem;
+    }
+}
+
+/* Accessibility improvements */
+.company-card:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.close {
+    color: #6b7280;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #1f2937;
+}
+
+.modal-body {
+    padding: 24px;
+}
+
+.modal-body p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374151;
+}
+
+.modal-body strong {
+    color: #1e40af;
+    font-weight: 600;
+}
+
+.modal-footer {
+    padding: 16px 24px 24px;
+    text-align: right;
+}
+
+.modal-close-btn {
+    background-color: #1e40af;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-close-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Cursor pointer för Upplysning-kortet */
+#upplysning-card {
+    cursor: pointer;
+}
+
+/* Två kolumner sektion */
+.two-columns-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+/* FAQ sektion */
+.faq-section {
+    background-color: #f8fafc;
+    padding: 60px 0;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Kalender påminnelse sektion */
+.calendar-reminder-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+    border-top: 1px solid #e2e8f0;
+}
+
+.calendar-reminder-section .column-icon {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.calendar-reminder-section h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.calendar-reminder-description {
+    text-align: center;
+    color: #4a5568;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.calendar-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.calendar-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 24px;
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #2d3748;
+    min-width: 160px;
+    justify-content: center;
+    min-height: 60px;
+}
+
+.calendar-button:hover {
+    border-color: #3182ce;
+    background: #f7fafc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(49, 130, 206, 0.15);
+}
+
+.calendar-button:active {
+    transform: translateY(0);
+}
+
+.calendar-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 2px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.calendar-text {
+    font-weight: 500;
+}
+
+/* Steg-för-steg sektion */
+.step-by-step-section {
+    background: #f7fafc;
+    background: -webkit-linear-gradient(135deg, #e6f3ff 0%, #b3d9ff 100%);
+    background: -moz-linear-gradient(135deg, #e6f3ff 0%, #b3d9ff 100%);
+    background: -o-linear-gradient(135deg, #e6f3ff 0%, #b3d9ff 100%);
+    background: linear-gradient(135deg, #e6f3ff 0%, #b3d9ff 100%);
+    padding: 60px 0;
+    border-top: 1px solid #e2e8f0;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.step-by-step-section h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.faq-list,
+.step-by-step-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item,
+.step-by-step-item {
+    margin-bottom: 16px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px 24px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2d3748;
+    transition: all 0.2s ease;
+}
+
+.step-by-step-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px 24px;
+    text-align: left;
+    cursor: pointer;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2d3748;
+    transition: all 0.2s ease;
+}
+
+.faq-question:hover,
+.step-by-step-question:hover {
+    background-color: #f7fafc;
+    color: #4a5568;
+}
+
+.faq-question:focus,
+.step-by-step-question:focus {
+    outline: 2px solid #3182ce;
+    outline-offset: -2px;
+}
+
+.faq-question-text {
+    flex: 1;
+    margin-right: 16px;
+}
+
+.step-by-step-question-text {
+    display: inline;
+}
+
+.faq-icon,
+.step-by-step-icon {
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+    color: #3182ce;
+}
+
+/* Ikoner för steg-för-steg sektionen */
+.step-by-step-question {
+    position: relative;
+}
+
+.step-by-step-favicon {
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    margin-left: 2px;
+}
+
+.step-by-step-email-icon {
+    font-size: 1.2rem;
+    color: #3182ce;
+    margin-left: 2px;
+}
+
+.step-by-step-icon {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.faq-question[aria-expanded="true"] .faq-icon,
+.step-by-step-question[aria-expanded="true"] .step-by-step-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer,
+.step-by-step-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #f8fafc;
+}
+
+.faq-answer[aria-hidden="false"] {
+    max-height: 1500px;
+}
+
+.step-by-step-answer[aria-hidden="false"] {
+    max-height: 2000px;
+}
+
+.faq-answer p,
+.step-by-step-answer p {
+    padding: 20px 24px 20px 24px;
+    margin: 0;
+    color: #4a5568;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.faq-answer ul,
+.step-by-step-answer ul,
+.step-by-step-answer ol {
+    padding: 20px 24px 20px 24px;
+    margin: 0;
+    color: #4a5568;
+    line-height: 1.6;
+    font-size: 1rem;
+    list-style-position: inside;
+}
+
+.faq-answer li,
+.step-by-step-answer li {
+    margin-bottom: 8px;
+    padding-left: 0;
+}
+
+/* Snyggare styling för nummerade listor i steg-för-steg sektionen */
+.step-by-step-answer ol {
+    counter-reset: step-counter;
+    padding-left: 0;
+    list-style: none; /* Ta bort ursprungliga numren */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.step-by-step-answer ol li {
+    counter-increment: step-counter;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.step-by-step-answer ol li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #3182ce;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.step-by-step-answer ol li:last-child {
+    margin-bottom: 0;
+}
+
+.faq-answer li:last-child,
+.step-by-step-answer li:last-child {
+    margin-bottom: 0;
+}
+
+/* Brevmallsinformation för e-post företag */
+.step-by-step-brevmall {
+    margin-top: 20px;
+    padding: 20px 24px;
+    background: #f8f9fa;
+    border-left: 4px solid #3182ce;
+    border-radius: 4px;
+}
+
+.step-by-step-brevmall h4 {
+    margin: 0 0 12px 0;
+    color: #2d3748;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.step-by-step-brevmall p {
+    margin: 0 0 12px 0;
+    color: #4a5568;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.brevmall-content {
+    background: #ffffff;
+    padding: 15px;
+    margin: 15px 0 0 0;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+    font-family: monospace;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #2d3748;
+    position: relative;
+}
+
+.brevmall-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.brevmall-copy-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.brevmall-copy-icon:hover {
+    background: #3182ce;
+    color: white;
+    transform: scale(1.1);
+}
+
+.brevmall-copy-icon:active {
+    transform: scale(0.95);
+}
+
+/* FAQ brevmall styling */
+.faq-brevmall-content {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 4px solid #3182ce;
+    font-family: monospace;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    position: relative;
+}
+
+.faq-brevmall-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.faq-brevmall-copy-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.faq-brevmall-copy-icon:hover {
+    background: #3182ce;
+    color: white;
+    transform: scale(1.1);
+}
+
+.faq-brevmall-copy-icon:active {
+    transform: scale(0.95);
+}
+
+.faq-brevmall-text {
+    font-family: monospace;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #2d3748;
+}
+
+.brevmall-text p {
+    margin: 0 0 8px 0;
+    font-size: 0.9rem;
+}
+
+.brevmall-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* Länkar och Om sidan sektion */
+.links-about-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Social Media Sharing Section */
+.social-sharing-section {
+    background-color: #f8fafc;
+    padding: 30px 0 20px 0;
+    border-top: 1px solid #e2e8f0;
+}
+
+.social-sharing-content {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.social-sharing-text {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.social-link:hover {
+    background-color: #f1f5f9;
+    border-color: #cbd5e1;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.social-link:focus {
+    outline: 3px solid #3182ce;
+    outline-offset: 2px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #64748b;
+    transition: fill 0.2s ease;
+}
+
+.social-link:hover .social-icon {
+    fill: #475569;
+}
+
+.footer-text {
+    color: #718096;
+    font-size: 0.9rem;
+    margin: 20px 0 0 0;
+    line-height: 1.4;
+}
+
+.links-about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .links-about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .social-sharing-section {
+        padding: 25px 0 15px 0;
+    }
+    
+    .social-links {
+        gap: 15px;
+    }
+    
+    .social-link {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .social-icon {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .footer-text {
+        font-size: 0.85rem;
+        margin: 15px 0 0 0;
+    }
+}
+
+.links-column h2,
+.about-column h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-favicon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links-list li {
+    margin-bottom: 12px;
+}
+
+.links-list a {
+    color: #3182ce;
+    text-decoration: none;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    transition: color 0.2s ease;
+}
+
+.links-list a:hover {
+    color: #2c5aa0;
+    text-decoration: underline;
+}
+
+
+.about-column p {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+}
+
+.about-column p:last-child {
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 480px) {
+    .social-sharing-section {
+        padding: 20px 0 12px 0;
+    }
+    
+    .social-links {
+        gap: 12px;
+    }
+    
+    .social-link {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .social-icon {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .footer-text {
+        font-size: 0.8rem;
+        margin: 12px 0 0 0;
+    }
+}
+
+.columns-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.column-item {
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 12px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.column-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-color: #3182ce;
+}
+
+.column-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.column-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0 0 15px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.column-text {
+    font-size: 1rem;
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+}
+
+.column-link {
+    color: #3182ce;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.column-link:hover {
+    color: #2c5aa0;
+    text-decoration: underline;
+}
+
+/* Responsiv design för två kolumner */
+@media (max-width: 768px) {
+    .columns-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .column-item {
+        padding: 25px 15px;
+    }
+    
+    .column-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .column-title {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+    }
+    
+    .column-text {
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+    }
+}
+
+/* Söksektion styling */
+.search-section {
+    background: #f7fafc;
+    background: -webkit-linear-gradient(135deg, #e6f3ff 0%, #b3d9ff 100%);
+    background: -moz-linear-gradient(135deg, #e6f3ff 0%, #b3d9ff 100%);
+    background: -o-linear-gradient(135deg, #e6f3ff 0%, #b3d9ff 100%);
+    background: linear-gradient(135deg, #e6f3ff 0%, #b3d9ff 100%);
+    padding: 40px 0 80px 0;
+    margin-top: 20px;
+}
+
+.search-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.search-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0;
+}
+
+
+.search-content {
+    display: block;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+}
+
+
+.search-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 20px;
+    align-items: end;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .search-form {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        align-items: stretch;
+    }
+}
+
+/* Knapptext responsivitet */
+.btn-text-desktop {
+    display: inline;
+}
+
+.btn-text-mobile {
+    display: none;
+}
+
+/* Extra små skärmar under 450px */
+@media (max-width: 450px) {
+    .search-container {
+        padding: 0 8px;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .search-form {
+        padding: 0;
+        margin: 0;
+        gap: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .form-group {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    
+    .form-group input {
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    
+    .generate-btn {
+        width: 100%;
+        padding: 10px 6px;
+        font-size: 0.85rem;
+        margin-top: 8px;
+        box-sizing: border-box;
+        max-width: 100%;
+        min-height: 40px;
+        border: none;
+    }
+    
+    .btn-text-desktop {
+        display: none;
+    }
+    
+    .btn-text-mobile {
+        display: inline;
+    }
+    
+    .generated-links {
+        margin-top: 20px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .generated-link {
+        padding: 10px 6px;
+        font-size: 0.85rem;
+        min-height: 40px;
+    }
+    
+    .generated-link-icon {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .generated-link-text {
+        font-size: 0.85rem;
+    }
+    
+    .search-section {
+        padding: 20px 0;
+        overflow-x: hidden;
+    }
+}
+
+/* Extra små skärmar under 370px för generated links */
+@media (max-width: 370px) {
+    .generated-link-text {
+        font-size: 0.75rem;
+        line-height: 1.2;
+        word-break: break-word;
+    }
+    
+    .generated-link {
+        padding: 6px 3px;
+        min-height: 32px;
+    }
+    
+    .generated-link-icon {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+/* Mycket små skärmar under 380px */
+@media (max-width: 380px) {
+    .search-container {
+        padding: 0 5px;
+    }
+    
+    .generate-btn {
+        padding: 8px 4px;
+        font-size: 0.8rem;
+        min-height: 36px;
+    }
+    
+    .form-group input {
+        padding: 8px 6px;
+        font-size: 0.9rem;
+    }
+    
+    .generated-link {
+        padding: 8px 4px;
+        font-size: 0.8rem;
+        min-height: 36px;
+    }
+    
+    .generated-link-icon {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .generated-link-text {
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+}
+
+/* FAQ och Steg-för-steg responsiv design */
+@media (max-width: 768px) {
+    .faq-section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 30px;
+    }
+    
+    .step-by-step-section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 30px;
+    }
+    
+    .faq-question {
+        padding: 16px 20px;
+        font-size: 1rem;
+    }
+    
+    .step-by-step-question {
+        padding: 16px 20px;
+        font-size: 1rem;
+    }
+    
+    .step-by-step-icon {
+        right: 20px;
+    }
+    
+    .faq-answer p,
+    .step-by-step-answer p {
+        padding: 16px 20px 16px 20px;
+        font-size: 0.95rem;
+    }
+    
+    .faq-answer ul,
+    .step-by-step-answer ul,
+    .step-by-step-answer ol {
+        padding: 16px 20px 16px 20px;
+        font-size: 0.95rem;
+    }
+    
+    .step-by-step-answer ol {
+        max-width: 600px;
+    }
+    
+    .step-by-step-answer[aria-hidden="false"] {
+        max-height: 1200px;
+    }
+    
+    .calendar-reminder-section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    
+    .calendar-reminder-description {
+        font-size: 0.95rem;
+        margin-bottom: 30px;
+    }
+    
+    .calendar-buttons {
+        gap: 15px;
+    }
+    
+    .calendar-button {
+        padding: 14px 20px;
+        font-size: 0.9rem;
+        min-width: 140px;
+        min-height: 55px;
+    }
+    
+    .step-by-step-answer ol li {
+        padding-left: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .step-by-step-answer ol li::before {
+        width: 22px;
+        height: 22px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-section,
+    .step-by-step-section {
+        padding: 40px 0;
+    }
+    
+    .faq-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 25px;
+    }
+    
+    .step-by-step-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 25px;
+    }
+    
+    .faq-question {
+        padding: 14px 16px;
+        font-size: 0.95rem;
+    }
+    
+    .step-by-step-question {
+        padding: 14px 16px;
+        font-size: 0.95rem;
+    }
+    
+    .step-by-step-icon {
+        right: 16px;
+    }
+    
+    .faq-answer p,
+    .step-by-step-answer p {
+        padding: 14px 16px 14px 16px;
+        font-size: 0.9rem;
+    }
+    
+    .faq-answer ul,
+    .step-by-step-answer ul,
+    .step-by-step-answer ol {
+        padding: 14px 16px 14px 16px;
+        font-size: 0.9rem;
+    }
+    
+    .step-by-step-answer ol {
+        max-width: 500px;
+    }
+    
+    .step-by-step-answer[aria-hidden="false"] {
+        max-height: 2000px;
+    }
+    
+    .step-by-step-answer ol li {
+        padding-left: 25px;
+        margin-bottom: 8px;
+    }
+    
+    .step-by-step-answer ol li::before {
+        width: 20px;
+        height: 20px;
+        font-size: 0.8rem;
+    }
+    
+    .faq-icon,
+    .step-by-step-icon {
+        font-size: 1.3rem;
+    }
+    
+    .step-by-step-favicon {
+        width: 16px;
+        height: 16px;
+        margin-left: 2px;
+    }
+    
+    .step-by-step-email-icon {
+        font-size: 1.1rem;
+        margin-left: 2px;
+    }
+    
+    .step-by-step-brevmall {
+        margin-top: 12px;
+        padding: 12px 16px;
+    }
+    
+    .step-by-step-brevmall h4 {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+    }
+    
+    .step-by-step-brevmall p {
+        font-size: 0.85rem;
+        margin-bottom: 8px;
+    }
+    
+    .brevmall-content {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+    
+    .brevmall-copy-icon {
+        font-size: 1rem;
+        padding: 3px 6px;
+    }
+    
+    .faq-brevmall-copy-icon {
+        font-size: 1rem;
+        padding: 3px 6px;
+    }
+    
+    .calendar-reminder-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+    }
+    
+    .companies-section h2 {
+        font-size: 1.1rem;
+    }
+    
+    .calendar-reminder-description {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+    
+    .calendar-buttons {
+        gap: 12px;
+    }
+    
+    .calendar-button {
+        padding: 12px 16px;
+        font-size: 0.85rem;
+        min-width: 120px;
+        min-height: 50px;
+    }
+    
+    .calendar-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    padding: 12px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #1e40af;
+    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+.generate-btn {
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+}
+
+.generate-btn:hover {
+    background-color: #2c5aa0;
+    transform: translateY(-1px);
+}
+
+.generate-btn:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.generated-links {
+    display: none;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+/* Flera kolumner på större skärmar */
+@media (min-width: 768px) {
+    .generated-links {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+.generated-links.show {
+    display: grid;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.generated-link {
+    background-color: #f8fafc;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.generated-link:hover {
+    border-color: #4a5568;
+    background-color: #f7fafc;
+    text-decoration: none;
+    color: inherit;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.generated-link-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.generated-link-text {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+    flex: 1;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.generated-link:hover .generated-link-text {
+    color: #2d3748;
+}
+

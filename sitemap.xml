@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    
+    <!-- Huvudsida -->
+    <url>
+        <loc>https://tabortmig.se/</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Sökfunktion -->
+    <url>
+        <loc>https://tabortmig.se/#search-section</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- FAQ sektion -->
+    <url>
+        <loc>https://tabortmig.se/#faq-section</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Kalender påminnelse sektion -->
+    <url>
+        <loc>https://tabortmig.se/#calendar-reminder-section</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Steg-för-steg guide sektion -->
+    <url>
+        <loc>https://tabortmig.se/#step-by-step-section</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Länkar och Om sidan sektion -->
+    <url>
+        <loc>https://tabortmig.se/#links-about-section</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Social Media Sharing sektion -->
+    <url>
+        <loc>https://tabortmig.se/#social-sharing-section</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <!-- Verktyg sektion -->
+    <url>
+        <loc>https://tabortmig.se/#tools-section</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Företagsspecifika sidor (för framtida utveckling) -->
+    <url>
+        <loc>https://tabortmig.se/ratsit</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://tabortmig.se/hitta-se</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://tabortmig.se/eniro</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://tabortmig.se/mrkoll</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://tabortmig.se/merinfo</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://tabortmig.se/birthday-se</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://tabortmig.se/upplysning-se</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://tabortmig.se/180-se</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- GDPR och dataskydd guider -->
+    <url>
+        <loc>https://tabortmig.se/gdpr-guide</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://tabortmig.se/brevmall-radering</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://tabortmig.se/soktraffar-google</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Om oss -->
+    <url>
+        <loc>https://tabortmig.se/om-oss</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <!-- Kontakt -->
+    <url>
+        <loc>https://tabortmig.se/kontakt</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    
+    <!-- Integritetspolicy -->
+    <url>
+        <loc>https://tabortmig.se/integritetspolicy</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.2</priority>
+    </url>
+    
+    <!-- 404 Error Page -->
+    <url>
+        <loc>https://tabortmig.se/404.html</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
+    
+</urlset>
+

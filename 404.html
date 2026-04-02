@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Sidan du söker kunde inte hittas. Gå tillbaka till startsidan för att ta bort dina personuppgifter från internet.">
+    <meta name="robots" content="noindex, follow">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    
+    <title>404 - Sidan hittades inte | Ta bort mig</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 20px;
+        }
+        
+        .error-content {
+            text-align: center;
+            max-width: 600px;
+            background: white;
+            padding: 60px 40px;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        .error-icon {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+        
+        .error-code {
+            font-size: 4rem;
+            font-weight: 700;
+            color: #63b3ed;
+            margin-bottom: 5px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .error-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .error-description {
+            font-size: 1.1rem;
+            color: #6b7280;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        
+        .error-actions {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .btn-primary {
+            background: #3182ce;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            display: inline-block;
+        }
+        
+        .btn-primary:hover {
+            background: #2c5aa0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #3182ce;
+            border: 2px solid #3182ce;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            display: inline-block;
+        }
+        
+        .btn-secondary:hover {
+            background: #3182ce;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .helpful-links {
+            margin-top: 20px;
+            padding-top: 10px;
+        }
+        
+        .helpful-links h2 {
+            font-size: 1rem;
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .link-item {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #4a5568;
+            transition: all 0.2s ease;
+            border: 1px solid #e2e8f0;
+            text-align: center;
+        }
+        
+        .link-item:hover {
+            background: #edf2f7;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .link-item strong {
+            color: #2d3748;
+            display: block;
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .link-item span {
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+        
+        .link-item strong::before {
+            content: attr(data-icon);
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .error-content {
+                padding: 40px 20px;
+            }
+            
+            .error-code {
+                font-size: 3rem;
+            }
+            
+            .error-title {
+                font-size: 1.5rem;
+            }
+            
+            .btn-primary {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <div class="error-content">
+            <img src="/favicon/android-chrome-512x512.png" alt="Ta bort mig logotyp" class="error-icon">
+            
+            <div class="error-code" aria-label="Felkod 404">404</div>
+            <h1 class="error-title">Sidan hittades inte</h1>
+            <p class="error-description">
+                Tyvärr kunde vi inte hitta sidan du söker efter. Den kan ha flyttats, tagits bort eller så har du skrivit in fel adress.
+            </p>
+            
+            <div class="error-actions">
+                <a href="/" class="btn-primary" tabindex="1">Tillbaka till startsidan</a>
+            </div>
+            
+            <div class="helpful-links">
+                <h2>Kanske letar du efter något av detta?</h2>
+                <div class="links-grid" role="list" aria-label="Hjälpsamma länkar">
+                    <a href="/#search-section" class="link-item" tabindex="2" role="listitem" aria-label="Sök personuppgifter - hitta var dina uppgifter finns">
+                        <strong data-icon="🔍">Sök personuppgifter</strong>
+                        <span>Hitta var dina uppgifter finns</span>
+                    </a>
+                    <a href="/#faq-section" class="link-item" tabindex="3" role="listitem" aria-label="Vanliga frågor - få svar på dina frågor">
+                        <strong data-icon="❓">Vanliga frågor</strong>
+                        <span>Få svar på dina frågor</span>
+                    </a>
+                    <a href="/#step-by-step-section" class="link-item" tabindex="4" role="listitem" aria-label="Steg-för-steg guide - lär dig ta bort uppgifter">
+                        <strong data-icon="📋">Steg-för-steg guide</strong>
+                        <span>Lär dig ta bort uppgifter</span>
+                    </a>
+                    <a href="/#calendar-reminder-section" class="link-item" tabindex="5" role="listitem" aria-label="Kalenderpåminnelse - sätt påminnelse om ett år">
+                        <strong data-icon="📅">Kalenderpåminnelse</strong>
+                        <span>Sätt påminnelse om ett år</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "404 - Sidan hittades inte",
+        "description": "Sidan du söker kunde inte hittas. Gå tillbaka till startsidan för att ta bort dina personuppgifter från internet.",
+        "url": "https://tabortmig.se/404.html",
+        "inLanguage": "sv-SE",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Ta bort mig",
+            "url": "https://tabortmig.se/"
+        },
+        "mainEntity": {
+            "@type": "Thing",
+            "name": "404 Error Page",
+            "description": "Sida som visas när en begärd resurs inte hittas"
+        }
+    }
+    </script>
+</body>
+</html>

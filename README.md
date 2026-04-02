@@ -2,6 +2,8 @@
 
 En minimalistisk och modern webbsida som hjälper användare att ta bort sina personuppgifter från olika webbplatser.
 
+**Webbplats:** [delit.github.io/tabort](https://delit.github.io/tabort/) · **Repository:** [github.com/delit/tabort](https://github.com/delit/tabort)
+
 ## Funktioner
 
 - **Minimalistisk design** - Rent och avskalat gränssnitt med mycket vitt utrymme
@@ -45,13 +47,6 @@ En minimalistisk och modern webbsida som hjälper användare att ta bort sina pe
 - Click tracking för analytics
 - Error handling för externa länkar
 
-## Användning
-
-1. Öppna `index.html` i en webbläsare
-2. Klicka på "Ta bort mig från ▼" för att öppna dropdown-menyn
-3. Välj den webbplats du vill ta bort dig från
-4. Du kommer att tas till rätt sida för att begära borttagning av dina personuppgifter
-
 ## Keyboard shortcuts
 
 - **Alt + D** - Öppna dropdown-meny
@@ -65,22 +60,6 @@ Webbsidan är optimerad för:
 - **Desktop** (1200px+)
 - **Tablet** (768px - 1199px)
 - **Mobil** (320px - 767px)
-
-## Browser support
-
-- Chrome 60+
-- Firefox 60+
-- Safari 12+
-- Edge 79+
-
-## Utveckling
-
-För att utveckla lokalt:
-
-1. Klona eller ladda ner filerna
-2. Öppna `index.html` i en webbläsare
-3. Redigera filerna efter behov
-4. Testa på olika enheter och webbläsare
 
 ## Licens
 

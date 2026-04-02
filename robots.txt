@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://tabortmig.se/sitemap.xml
+Sitemap: https://delit.github.io/tabort/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

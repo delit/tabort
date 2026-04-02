@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
         reminderDate.setFullYear(today.getFullYear() + 1);
         
         const title = 'Kontrollera personuppgifter på webbplatser';
-        const description = 'Påminnelse att kontrollera om dina personuppgifter har lagts tillbaka på svenska webbplatser som Ratsit, Hitta.se, Eniro etc. Besök tabortmig.se för att ta bort dem igen.';
+        const description = 'Påminnelse att kontrollera om dina personuppgifter har lagts tillbaka på svenska webbplatser som Ratsit, Hitta.se, Eniro etc. Besök https://delit.github.io/tabort för att ta bort dem igen.';
         
         const startDate = reminderDate.toISOString().split('T')[0].replace(/-/g, '');
         const endDate = startDate;
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Apple Calendar använder ICS-format
                 const icsContent = `BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Tabortmig.se//Calendar Event//EN
+PRODID:-//delit.github.io/tabort//Calendar Event//EN
 BEGIN:VEVENT
 DTSTART:${startDate}
 DTEND:${endDate}

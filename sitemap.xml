@@ -6,7 +6,7 @@
     
     <!-- Huvudsida -->
     <url>
-        <loc>https://tabortmig.se/</loc>
+        <loc>https://delit.github.io/tabort/</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -14,7 +14,7 @@
     
     <!-- Sökfunktion -->
     <url>
-        <loc>https://tabortmig.se/#search-section</loc>
+        <loc>https://delit.github.io/tabort/#search-section</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -22,7 +22,7 @@
     
     <!-- FAQ sektion -->
     <url>
-        <loc>https://tabortmig.se/#faq-section</loc>
+        <loc>https://delit.github.io/tabort/#faq-section</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -30,7 +30,7 @@
     
     <!-- Kalender påminnelse sektion -->
     <url>
-        <loc>https://tabortmig.se/#calendar-reminder-section</loc>
+        <loc>https://delit.github.io/tabort/#calendar-reminder-section</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -38,7 +38,7 @@
     
     <!-- Steg-för-steg guide sektion -->
     <url>
-        <loc>https://tabortmig.se/#step-by-step-section</loc>
+        <loc>https://delit.github.io/tabort/#step-by-step-section</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -46,7 +46,7 @@
     
     <!-- Länkar och Om sidan sektion -->
     <url>
-        <loc>https://tabortmig.se/#links-about-section</loc>
+        <loc>https://delit.github.io/tabort/#links-about-section</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
@@ -54,7 +54,7 @@
     
     <!-- Social Media Sharing sektion -->
     <url>
-        <loc>https://tabortmig.se/#social-sharing-section</loc>
+        <loc>https://delit.github.io/tabort/#social-sharing-section</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
@@ -62,7 +62,7 @@
     
     <!-- Verktyg sektion -->
     <url>
-        <loc>https://tabortmig.se/#tools-section</loc>
+        <loc>https://delit.github.io/tabort/#tools-section</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -70,56 +70,56 @@
     
     <!-- Företagsspecifika sidor (för framtida utveckling) -->
     <url>
-        <loc>https://tabortmig.se/ratsit</loc>
+        <loc>https://delit.github.io/tabort/ratsit</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
-        <loc>https://tabortmig.se/hitta-se</loc>
+        <loc>https://delit.github.io/tabort/hitta-se</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
-        <loc>https://tabortmig.se/eniro</loc>
+        <loc>https://delit.github.io/tabort/eniro</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
-        <loc>https://tabortmig.se/mrkoll</loc>
+        <loc>https://delit.github.io/tabort/mrkoll</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
-        <loc>https://tabortmig.se/merinfo</loc>
+        <loc>https://delit.github.io/tabort/merinfo</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
-        <loc>https://tabortmig.se/birthday-se</loc>
+        <loc>https://delit.github.io/tabort/birthday-se</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
-        <loc>https://tabortmig.se/upplysning-se</loc>
+        <loc>https://delit.github.io/tabort/upplysning-se</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
-        <loc>https://tabortmig.se/180-se</loc>
+        <loc>https://delit.github.io/tabort/180-se</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
@@ -127,21 +127,21 @@
     
     <!-- GDPR och dataskydd guider -->
     <url>
-        <loc>https://tabortmig.se/gdpr-guide</loc>
+        <loc>https://delit.github.io/tabort/gdpr-guide</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://tabortmig.se/brevmall-radering</loc>
+        <loc>https://delit.github.io/tabort/brevmall-radering</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://tabortmig.se/soktraffar-google</loc>
+        <loc>https://delit.github.io/tabort/soktraffar-google</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -149,7 +149,7 @@
     
     <!-- Om oss -->
     <url>
-        <loc>https://tabortmig.se/om-oss</loc>
+        <loc>https://delit.github.io/tabort/om-oss</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
@@ -157,7 +157,7 @@
     
     <!-- Kontakt -->
     <url>
-        <loc>https://tabortmig.se/kontakt</loc>
+        <loc>https://delit.github.io/tabort/kontakt</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
@@ -165,7 +165,7 @@
     
     <!-- Integritetspolicy -->
     <url>
-        <loc>https://tabortmig.se/integritetspolicy</loc>
+        <loc>https://delit.github.io/tabort/integritetspolicy</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.2</priority>
@@ -173,7 +173,7 @@
     
     <!-- 404 Error Page -->
     <url>
-        <loc>https://tabortmig.se/404.html</loc>
+        <loc>https://delit.github.io/tabort/404.html</loc>
         <lastmod>2025-09-20</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.1</priority>

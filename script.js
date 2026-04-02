@@ -548,7 +548,7 @@ END:VCALENDAR`;
             {
                 name: 'Birthday.se',
                 url: `https://www.birthday.se/sok?who=${encodedName}&where=${encodedLocation}`,
-                icon: '/favicon/birthday-se.svg'
+                icon: 'favicon/birthday-se.svg'
             },
             {
                 name: 'Upplysning.se',
